@@ -1,0 +1,52 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Praktika HTTP Service": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:Service=True --urls \"http://localhost:80;https://localhost:443\"",
+      "launchBrowser": true,
+      "launchUrl": "",
+      "applicationUrl": "http://localhost:80;https://localhost:443"
+    },
+    "Praktika Parse": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:Parse=True"
+    },
+    "Praktika Parse access1.log": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:Parse=True --Cfg:LogFileName=access1.log"
+    },
+    "Praktika Print (by Date, default)": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:Print=True"
+    },
+    "Praktika Print by Ip": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:Print=True --Cfg:ByDate=False"
+    },
+    "Praktika Print 10.06.2024 (by Date, default)": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:FilterDate=\"10.06.2024\""
+    },
+    "Praktika Print 11.06.2024 by Date": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:FilterDate=\"11.06.2024\""
+    },
+    "Praktika Print 11.06.2024 by Ip": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:FilterDate=\"11.06.2024\" --Cfg:ByDate=False"
+    },
+    "Praktika Print 10-11.06.2024 by Date": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:FilterDate1=\"10.06.2024\" --Cfg:FilterDate2=\"11.06.2024\" --Cfg:ByDate=True"
+    },
+    "Praktika Print 10-11.06.2024 by Ip": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:FilterDate1=\"10.06.2024\" --Cfg:FilterDate2=\"11.06.2024\" --Cfg:ByDate=False"
+    },
+    "Praktika Help": {
+      "commandName": "Project",
+      "commandLineArgs": "--Cfg:Help=True"
+    }
+  }
+}
